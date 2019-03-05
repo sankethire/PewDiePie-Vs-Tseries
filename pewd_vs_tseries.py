@@ -1,4 +1,3 @@
-import json
 import time
 import requests
 import tkinter as tk
