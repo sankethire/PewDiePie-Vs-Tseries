@@ -12,3 +12,7 @@
 ###### 	7) Then go the library from left section and search for YouTube Data API v3
 ###### 	8) Enable the YouTube Data API v3 and your are good to go.
 
+### To run the live stream :
+```
+python3 pewd_vs_tseries.py
+```
