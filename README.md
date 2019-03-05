@@ -8,7 +8,7 @@
 ###### 	3) Enter that project
 ###### 	4) Go to credentials from left section
 ###### 	5) Click on "Create credentials" -> Click on "API key"
-###### 	6) Copy the apikey on your screen can paste it as value assigned to key in subcount() fuction
+###### 	6) Copy the apikey on your screen and paste it as value assigned to key in subcount() fuction
 ###### 	7) Then go the library from left section and search for YouTube Data API v3
 ###### 	8) Enable the YouTube Data API v3 and your are good to go.
 
