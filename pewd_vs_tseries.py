@@ -39,7 +39,7 @@ def subcount():
 
 	diff = int(pdp) - int(ts)
 	if(diff < 0):
-		label.configure(text = "\n" + "\t" + "PewDiePie : " + pdp + "\t" + "\t" + "\t" + "Tseries : " + ts + "\t" + "\t" + "\n" + "Tseries is ahead of PewDiePie by "+ str(diff) + "\n")
+		label.configure(text = "\n" + "\t" + "PewDiePie : " + pdp + "\t" + "\t" + "\t" + "Tseries : " + ts + "\t" + "\t" + "\n" + "Tseries is ahead of PewDiePie by "+ str(-1*diff) + "\n")
 	else:
 		label.configure(text = "\n" + "\t" + "PewDiePie : " + pdp + "\t" + "\t" + "\t" + "Tseries : " + ts + "\t" + "\t" + "\n\n" + "PewDiePie is ahead of Tseries by "+ str(diff) + "\n")
 	root.after(1000,subcount)
