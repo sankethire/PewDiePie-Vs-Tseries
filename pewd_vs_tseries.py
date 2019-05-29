@@ -21,7 +21,7 @@ def subcount():
 # 	6) Copy the apikey on your screen can paste it as value assigned to key in subcount() fuction
 # 	7) Then go the library from left section and search for YouTube Data API v3
 # 	8) Enable the YouTube Data API v3 and your are good to go.
-	key = "AIzaSyBU_9_2z1UeWfVwT9hNLvTPhK3G86P6bIQ"
+	key = "enter the apikey here"
 	pewd = "https://www.googleapis.com/youtube/v3/channels?part=statistics&forUsername=PewDiePie&key=" + key
 	tseries = "https://www.googleapis.com/youtube/v3/channels?part=statistics&forUsername=tseries&key=" + key
 
