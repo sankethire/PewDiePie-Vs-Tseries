@@ -21,7 +21,7 @@ def subcount():
 # 	6) Copy the apikey on your screen can paste it as value assigned to key in subcount() fuction
 # 	7) Then go the library from left section and search for YouTube Data API v3
 # 	8) Enable the YouTube Data API v3 and your are good to go.
-	key = "Enter your API key here as per given steps above"
+	key = "AIzaSyBU_9_2z1UeWfVwT9hNLvTPhK3G86P6bIQ"
 	pewd = "https://www.googleapis.com/youtube/v3/channels?part=statistics&forUsername=PewDiePie&key=" + key
 	tseries = "https://www.googleapis.com/youtube/v3/channels?part=statistics&forUsername=tseries&key=" + key
 
@@ -31,13 +31,23 @@ def subcount():
 	li = (p.text).split(',')
 
 	li_ = (t.text).split(',')
-	
-	pdp = str(li[9][25:len(li[9])-1])
-	ts = str(li_[9][25:len(li[9])-1])
 
+	pewdsub = li[9].split(": ")[1]
+	tsub = li_[9].split(": ")[1]
+
+	# print(li[9].split(": ")[1])
+	# print(li_[9].split(": ")[1])
+	# print("------------------")
+	# pdp = str(li[9][25:len(li[9])-1])
+	# ts = str(li_[9][25:len(li[9])-1])
+	pdp = str(pewdsub[1:len(li)-3])
+	ts = str(tsub[1:len(li)-2])
+	# print(pdp)
+	# print(ts)
 	
 
 	diff = int(pdp) - int(ts)
+	
 	if(diff < 0):
 		label.configure(text = "\n" + "\t" + "PewDiePie : " + pdp + "\t" + "\t" + "\t" + "Tseries : " + ts + "\t" + "\t" + "\n" + "Tseries is ahead of PewDiePie by "+ str(-1*diff) + "\n")
 	else:
