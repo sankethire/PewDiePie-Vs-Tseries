@@ -17,3 +17,13 @@
 ```
 python3 pewd_vs_tseries.py
 ```
+
+### Required Libraries
+```
+import time
+import requests
+import tkinter as tk
+from playsound import playsound
+from PIL import Image, ImageTk
+import multiprocessing
+```
