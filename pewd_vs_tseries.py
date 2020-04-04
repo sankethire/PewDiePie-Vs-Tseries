@@ -41,7 +41,7 @@ def subcount():
 	# pdp = str(li[9][25:len(li[9])-1])
 	# ts = str(li_[9][25:len(li[9])-1])
 	pdp = str(pewdsub[1:len(li)-3])
-	ts = str(tsub[1:len(li)-2])
+	ts = str(tsub[1:len(li)-3])
 	# print(pdp)
 	# print(ts)
 	
